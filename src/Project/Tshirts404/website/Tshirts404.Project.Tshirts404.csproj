@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{816F099C-E14B-4468-9E34-87F993C6484D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BasicCompany.Project.BasicCompany</RootNamespace>
+    <AssemblyName>BasicCompany.Project.BasicCompany</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Kernel" />
+    <PackageReference Include="Sitecore.Mvc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Project\Project.BasicCompany.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="assets\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="assets\bootstrap\css\bootstrap.css" />
+    <Content Include="assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="assets\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\bootstrap\js\bootstrap.js" />
+    <Content Include="assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\css\all.min.css" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\css\meanmenu.min.css" />
+    <Content Include="assets\css\owl.carousel.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\scss\pages\_404.css" />
+    <Content Include="assets\img\1.jpg" />
+    <Content Include="assets\img\a.jpg" />
+    <Content Include="assets\img\avaters\avatar1.png" />
+    <Content Include="assets\img\avaters\avatar2.png" />
+    <Content Include="assets\img\avaters\avatar3.png" />
+    <Content Include="assets\img\breadcrumb-bg.jpg" />
+    <Content Include="assets\img\company-logos\1.png" />
+    <Content Include="assets\img\company-logos\2.png" />
+    <Content Include="assets\img\company-logos\3.png" />
+    <Content Include="assets\img\company-logos\4.png" />
+    <Content Include="assets\img\company-logos\5.png" />
+    <Content Include="assets\img\dd.jpg" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\feature-bg.jpg" />
+    <Content Include="assets\img\hero-bg-2.jpg" />
+    <Content Include="assets\img\hero-bg-3.jpg" />
+    <Content Include="assets\img\hero-bg.jpg" />
+    <Content Include="assets\img\homepage-bg-pattern.png" />
+    <Content Include="assets\img\latest-news\news-bg-1.jpg" />
+    <Content Include="assets\img\latest-news\news-bg-2.jpg" />
+    <Content Include="assets\img\latest-news\news-bg-3.jpg" />
+    <Content Include="assets\img\latest-news\news-bg-4.jpg" />
+    <Content Include="assets\img\latest-news\news-bg-5.jpg" />
+    <Content Include="assets\img\latest-news\news-bg-6.jpg" />
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\products\product-img-1.jpg" />
+    <Content Include="assets\img\products\product-img-2.jpg" />
+    <Content Include="assets\img\products\product-img-3.jpg" />
+    <Content Include="assets\img\products\product-img-4.jpg" />
+    <Content Include="assets\img\products\product-img-5.jpg" />
+    <Content Include="assets\img\products\product-img-6.jpg" />
+    <Content Include="assets\img\promo-banner.jpg" />
+    <Content Include="assets\img\t-shirt-bg.jpg" />
+    <Content Include="assets\img\team\team-1.jpg" />
+    <Content Include="assets\img\team\team-2.jpg" />
+    <Content Include="assets\img\team\team-3.jpg" />
+    <Content Include="assets\js\cart.js" />
+    <Content Include="assets\js\form-validate.js" />
+    <Content Include="assets\js\jquery-1.11.3.min.js" />
+    <Content Include="assets\js\jquery.countdown.js" />
+    <Content Include="assets\js\jquery.isotope-3.0.6.min.js" />
+    <Content Include="assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\jquery.meanmenu.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\sticker.js" />
+    <Content Include="assets\js\waypoints.js" />
+    <Content Include="assets\webfonts\fa-brands-400.svg" />
+    <Content Include="assets\webfonts\fa-regular-400.svg" />
+    <Content Include="assets\webfonts\fa-solid-900.svg" />
+    <Content Include="css\basic-company.css" />
+    <Content Include="js\basic-company.js" />
+    <Content Include="Views\Tshirts404\Layouts\Default.cshtml" />
+    <Content Include="assets\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap.css.map" />
+    <Content Include="assets\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="assets\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="assets\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="assets\bootstrap\js\bootstrap.js.map" />
+    <Content Include="assets\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="assets\css\scss\base\_mixins.scss" />
+    <Content Include="assets\css\scss\base\_typography.scss" />
+    <Content Include="assets\css\scss\base\_variables.scss" />
+    <Content Include="assets\css\scss\common\_common.scss" />
+    <Content Include="assets\css\scss\common\_footer.scss" />
+    <Content Include="assets\css\scss\common\_header.scss" />
+    <Content Include="assets\css\scss\common\_hover.scss" />
+    <Content Include="assets\css\scss\main.scss" />
+    <Content Include="assets\css\scss\pages\_404.scss" />
+    <Content Include="assets\css\scss\pages\_about.scss" />
+    <Content Include="assets\css\scss\pages\_contact.scss" />
+    <Content Include="assets\css\scss\pages\_shop.scss" />
+    <Content Include="assets\css\scss\prepros-6.config" />
+    <Content Include="assets\css\scss\sections\_about.scss" />
+    <Content Include="assets\css\scss\sections\_cart-banner.scss" />
+    <Content Include="assets\css\scss\sections\_hero.scss" />
+    <Content Include="assets\css\scss\sections\_list.scss" />
+    <Content Include="assets\css\scss\sections\_news.scss" />
+    <Content Include="assets\css\scss\sections\_shop-banner.scss" />
+    <Content Include="assets\css\scss\sections\_testimonials.scss" />
+    <Content Include="assets\webfonts\fa-brands-400.eot" />
+    <Content Include="assets\webfonts\fa-brands-400.eot_" />
+    <Content Include="assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="assets\webfonts\fa-brands-400.woff" />
+    <Content Include="assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="assets\webfonts\fa-regular-400.eot" />
+    <Content Include="assets\webfonts\fa-regular-400.eot_" />
+    <Content Include="assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="assets\webfonts\fa-regular-400.woff" />
+    <Content Include="assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="assets\webfonts\fa-solid-900.eot" />
+    <Content Include="assets\webfonts\fa-solid-900.eot_" />
+    <Content Include="assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="assets\webfonts\fa-solid-900.woff" />
+    <Content Include="assets\webfonts\fa-solid-900.woff2" />
+    <None Include="Views\web.config" />
+    <None Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52287</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52230/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
