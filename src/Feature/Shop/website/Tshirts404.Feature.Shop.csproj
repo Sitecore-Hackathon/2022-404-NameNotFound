@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BasicCompany.Feature.BasicContent</RootNamespace>
-    <AssemblyName>BasicCompany.Feature.BasicContent</AssemblyName>
+    <RootNamespace>Tshirts.Feature.Shop</RootNamespace>
+    <AssemblyName>Tshirts.Feature.Shop</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -51,11 +51,20 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ShopController.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\LoadRoutes.cs" />
+    <Compile Include="Repositories\RouteConfig.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shop\PromoCard.cshtml" />
+    <Content Include="Views\Shop\Breadcrumb.cshtml" />
+    <Content Include="Views\Shop\Products.cshtml" />
+    <Content Include="Views\Shop\Product.cshtml" />
+    <Content Include="Views\Shop\MoreProducts.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.ShopApi.config" />
     <None Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -73,11 +82,7 @@
       <Name>Tshirts404.Foundation.FieldRendering</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Config\Include\Feature\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

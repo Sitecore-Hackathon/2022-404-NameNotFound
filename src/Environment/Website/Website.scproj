@@ -61,11 +61,20 @@
       <SourceWebVirtualPath>/Tshirts404.Feature.BasicContent.csproj</SourceWebVirtualPath>
       <SourceWebProjectId>86b7e1bd-dc6d-45db-b11b-255b18c3cf62</SourceWebProjectId>
     </SourceWebProjects>
+    <SourceWebProjects Include="{ad1bde83-298b-4b94-bd9e-2444c308007a}|src\Feature\Shop\website\Tshirts404.Feature.Shop.csproj">
+      <SourceWebPhysicalPath>..\..\Feature\Shop\website</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/Tshirts404.Feature.Shop.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>ad1bde83-298b-4b94-bd9e-2444c308007a</SourceWebProjectId>
+    </SourceWebProjects>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Feature\BasicContent\website\Tshirts404.Feature.BasicContent.csproj">
       <Project>{86b7e1bd-dc6d-45db-b11b-255b18c3cf62}</Project>
       <Name>Tshirts404.Feature.BasicContent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\Shop\website\Tshirts404.Feature.Shop.csproj">
+      <Project>{ad1bde83-298b-4b94-bd9e-2444c308007a}</Project>
+      <Name>Tshirts404.Feature.Shop</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Foundation\FieldRendering\website\Tshirts404.Foundation.FieldRendering.csproj">
       <Project>{508c9659-2186-4655-b24a-f2de3744bab5}</Project>
