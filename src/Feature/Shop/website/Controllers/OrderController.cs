@@ -1,13 +1,13 @@
-using BasicCompany.Feature.BasicContent.Integrations;
-using BasicCompany.Feature.BasicContent.Models.Headstart;
-using BasicCompany.Feature.BasicContent.Models.Json;
-using BasicCompany.Feature.BasicContent.Repositories;
+using Tshirts.Feature.Shop.Integrations;
+using Tshirts.Feature.Shop.Models.Headstart;
+using Tshirts.Feature.Shop.Models.Json;
+using Tshirts.Feature.Shop.Repositories;
 using OrderCloud.Catalyst;
 using OrderCloud.SDK;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace BasicCompany.Feature.BasicContent.Controllers
+namespace Tshirts.Feature.Shop.Controllers
 {
     [System.Web.Mvc.Route("order")]
     public class OrderController : CatalystController

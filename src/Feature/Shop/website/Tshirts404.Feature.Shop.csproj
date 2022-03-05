@@ -46,7 +46,7 @@
     <PackageReference Include="ordercloud-dotnet-catalyst" VersionOverride="1.6.0">
       <AllowExplicitVersion>true</AllowExplicitVersion>
     </PackageReference>
-    <PackageReference Include="OrderCloud.SDK" VersionOverride="&gt;0.10.5">
+    <PackageReference Include="OrderCloud.SDK" VersionOverride="0.10.5">
       <AllowExplicitVersion>true</AllowExplicitVersion>
     </PackageReference>
     <PackageReference Include="Sitecore.Kernel" />
@@ -119,7 +119,6 @@
   <ItemGroup>
     <Folder Include="App_Config\Include\Feature\" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

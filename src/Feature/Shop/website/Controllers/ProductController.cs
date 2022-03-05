@@ -1,7 +1,7 @@
-using BasicCompany.Feature.BasicContent.Repositories;
+using Tshirts.Feature.Shop.Repositories;
 using System.Web.Mvc;
 
-namespace BasicCompany.Feature.BasicContent.Controllers
+namespace Tshirts.Feature.Shop.Controllers
 {
     [Route("product")]
     public class ProductController : Controller

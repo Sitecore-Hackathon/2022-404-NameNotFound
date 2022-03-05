@@ -2,7 +2,7 @@
 using System.Configuration;
 using OrderCloud.SDK;
 
-namespace BasicCompany.Feature.BasicContent.Helpers
+namespace Tshirts.Feature.Shop.Helpers
 {
     public static class OrderCloudClientFactory
     {

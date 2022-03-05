@@ -1,13 +1,13 @@
-﻿using BasicCompany.Feature.BasicContent.Models.Headstart;
-using BasicCompany.Feature.BasicContent.Models.Json;
+﻿using Tshirts.Feature.Shop.Models.Headstart;
+using Tshirts.Feature.Shop.Models.Json;
 using OrderCloud.SDK;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Threading.Tasks;
-using BasicCompany.Feature.BasicContent.Helpers;
+using Tshirts.Feature.Shop.Helpers;
 
-namespace BasicCompany.Feature.BasicContent.Repositories
+namespace Tshirts.Feature.Shop.Repositories
 {
     public class UserRepository
     {

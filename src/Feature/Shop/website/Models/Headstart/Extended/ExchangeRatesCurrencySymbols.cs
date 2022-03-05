@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace BasicCompany.Feature.BasicContent.Models.Headstart.Extended
+namespace Tshirts.Feature.Shop.Models.Headstart.Extended
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum CurrencySymbol

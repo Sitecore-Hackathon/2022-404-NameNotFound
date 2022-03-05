@@ -2,10 +2,10 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using OrderCloud.SDK;
 using System.Collections.Generic;
-using BasicCompany.Feature.BasicContent.Helpers;
-using BasicCompany.Feature.BasicContent.Models.Headstart.Extended;
+using Tshirts.Feature.Shop.Helpers;
+using Tshirts.Feature.Shop.Models.Headstart.Extended;
 
-namespace BasicCompany.Feature.BasicContent.Models.Headstart
+namespace Tshirts.Feature.Shop.Models.Headstart
 {
     public class SuperHSProduct : IHSObject
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BasicCompany.Feature.BasicContent.Integrations
+namespace Tshirts.Feature.Shop.Integrations
 {
     public class OrderCloudIntegrationsCreditCardPayment
     {

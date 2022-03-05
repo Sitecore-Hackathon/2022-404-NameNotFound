@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BasicCompany.Feature.BasicContent.Helpers
+namespace Tshirts.Feature.Shop.Helpers
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Class)]
     public class OrchestrationIgnoreAttribute : Attribute { }

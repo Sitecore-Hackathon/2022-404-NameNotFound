@@ -1,4 +1,4 @@
-﻿namespace BasicCompany.Feature.BasicContent.Models.Headstart
+﻿namespace Tshirts.Feature.Shop.Models.Headstart
 {
 
     public class HSLineItemOrder

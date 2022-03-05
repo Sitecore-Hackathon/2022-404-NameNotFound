@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace BasicCompany.Feature.BasicContent.Models.Json
+namespace Tshirts.Feature.Shop.Models.Json
 {
     [Serializable]
     public class BaseResultJson

@@ -1,6 +1,6 @@
 using OrderCloud.SDK;
 
-namespace BasicCompany.Feature.BasicContent.Models.Headstart
+namespace Tshirts.Feature.Shop.Models.Headstart
 {
     public class HSOrderWorksheet : OrderWorksheet<HSOrder, HSLineItem, HSShipEstimateResponse, HSOrderCalculateResponse, OrderSubmitResponse, OrderSubmitForApprovalResponse, OrderApprovedResponse>
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BasicCompany.Feature.BasicContent.Models.Json
+namespace Tshirts.Feature.Shop.Models.Json
 {
     [Serializable]
     public class CreateOrderParamsJson

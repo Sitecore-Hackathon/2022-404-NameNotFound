@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
-using BasicCompany.Feature.BasicContent.Repositories;
+using Tshirts.Feature.Shop.Repositories;
 using System.Web.Mvc;
-using BasicCompany.Feature.BasicContent.Models.Headstart;
-using BasicCompany.Feature.BasicContent.Models.Json;
+using Tshirts.Feature.Shop.Models.Headstart;
+using Tshirts.Feature.Shop.Models.Json;
 
-namespace BasicCompany.Feature.BasicContent.Controllers
+namespace Tshirts.Feature.Shop.Controllers
 {
     [Route("user")]
     public class UserController : Controller

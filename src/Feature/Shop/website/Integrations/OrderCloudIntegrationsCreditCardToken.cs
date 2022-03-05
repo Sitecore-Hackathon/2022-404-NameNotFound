@@ -1,7 +1,7 @@
 ﻿using OrderCloud.SDK;
 using System.ComponentModel.DataAnnotations;
 
-namespace BasicCompany.Feature.BasicContent.Integrations
+namespace Tshirts.Feature.Shop.Integrations
 {
     public class OrderCloudIntegrationsCreditCardToken
     {

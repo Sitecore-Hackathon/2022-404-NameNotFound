@@ -1,7 +1,7 @@
 using OrderCloud.SDK;
 using System.Collections.Generic;
 
-namespace BasicCompany.Feature.BasicContent.Models.Headstart
+namespace Tshirts.Feature.Shop.Models.Headstart
 {
 
     public class SuperHSShipment

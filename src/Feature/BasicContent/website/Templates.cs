@@ -4,14 +4,14 @@ namespace BasicCompany.Feature.BasicContent
 {
     public static class Templates
     {
-        public static class PromoCard
+        public static class BasicContent
         {
             public static class Fields
             {
-                public static readonly ID Link = new ID("{B788E8BC-E944-4A2B-A4BE-3424643D322B}");
-                public static readonly ID Image = new ID("{21249F44-5F0F-4CFA-9474-8D72930D6575}");
-                public static readonly ID Headline = new ID("{4F73C02B-93CC-4C96-B9FF-9D0D8E853ED6}");
-                public static readonly ID Text = new ID("{13EB8DCA-281D-4E75-B6E1-701CA719BCD1}");
+                public static readonly ID HeroTitle = new ID("{DFBE4B2A-1ECD-4A1D-81A4-6901073624DA}");
+                public static readonly ID ProductSectionTitle = new ID("{2FC32E94-89C7-4132-AAFE-71EB6731F53D}");
+                public static readonly ID ProductSectionDescription = new ID("{8610C8F2-33AF-42CC-BDE8-5ADAC144CCBF}");
+                public static readonly ID ProductSectionList = new ID("{B4AF77E7-682F-43CF-AC15-36EAAC270D9F}");
             }
         }
 

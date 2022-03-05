@@ -1,11 +1,11 @@
 ﻿using System.Configuration;
-using BasicCompany.Feature.BasicContent.Helpers;
-using BasicCompany.Feature.BasicContent.Models.Json;
-using BasicCompany.Feature.BasicContent.Models.Headstart;
+using Tshirts.Feature.Shop.Helpers;
+using Tshirts.Feature.Shop.Models.Json;
+using Tshirts.Feature.Shop.Models.Headstart;
 using OrderCloud.Catalyst;
 using OrderCloud.SDK;
 
-namespace BasicCompany.Feature.BasicContent.Repositories
+namespace Tshirts.Feature.Shop.Repositories
 {
     public class ProductRepository
     {
