@@ -1,0 +1,62 @@
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
+@using BasicCompany.Foundation.FieldRendering
+@using Tshirts.Feature.shop
+
+<!-- single product -->
+<div class="single-product mt-150 mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="single-product-img">
+                    <img src="https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140,2000%7C51-1kfZUhzL.png%7C0,0,2140,2000+0.0,0.0,2140.0,2000.0_AC_UL1500_.png"
+                         alt="">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="single-product-content">
+                    <h3>@Html.Sitecore().Field(Templates.Product.Fields.Name)</h3>
+                    <p class="single-product-pricing"><span>Per Item</span> $50</p>
+                    <p>
+                        @Html.Sitecore().Field(Templates.Product.Fields.Description)
+                    </p>
+                    <div class="single-product-form">
+                        <form id="product-form">
+                            <input type="hidden" name="productId" id="productId" value="12345678">
+                            <input type="hidden" name="productName" id="productName" value="Sitecore T-Shirt">
+                            <input type="hidden" name="productPrice" id="productPrice" value="55.5">
+                            <input type="hidden" name="productStock" id="productStock" value="10">
+                            <input type="hidden" name="productImage" id="productImage"
+                                   value="https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140,2000%7C51-1kfZUhzL.png%7C0,0,2140,2000+0.0,0.0,2140.0,2000.0_AC_UL1500_.png">
+                            <div class="single-product-form__field">
+                                <label for="quantity">Qty</label>
+                                <input type="number" placeholder="0" min="1" max="10" step="1" name="quantity"
+                                       id="quantity" required value="1">
+                            </div>
+                            <div class="single-product-form__field">
+                                <label for="size">Size</label>
+                                <select name="size" id="size" class="single-product-form__select">
+                                    <option value="Small">Small</option>
+                                    <option value="Medium" selected>Medium</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                            <div class="single-product-form__field">
+                                <label for="color">Color</label>
+                                <select name="color" id="color" class="single-product-form__select">
+                                    <option value="Black" selected>Black</option>
+                                    <option value="White">White</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="cart-btn">
+                                <i class="fas fa-shopping-cart"></i> Add to
+                                Cart
+                            </button>
+                        </form>
+                        <p><strong>Categories: </strong>Coding, Sitecore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end single product -->

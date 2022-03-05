@@ -4,7 +4,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>4af2db8e-5925-4317-8691-68d0ebe4d45b</ProjectGuid>
+    <ProjectGuid>{d4822adc-9b3f-4571-90d6-26cbdc51fc3c}</ProjectGuid>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <CompactSitecoreItemsInProjectFile>True</CompactSitecoreItemsInProjectFile>
     <AssemblyName>BasicCompany.Feature.BasicContent.Master</AssemblyName>
@@ -16,8 +16,8 @@
     <SerializationFormat>YML</SerializationFormat>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <SourceWebVirtualPath>/Tshirts404.Feature.BasicContent.csproj</SourceWebVirtualPath>
-    <SourceWebProject>{86b7e1bd-dc6d-45db-b11b-255b18c3cf62}|src\Feature\BasicContent\website\Tshirts404.Feature.BasicContent.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/Tshirts404.Feature.Shop.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{ad1bde83-298b-4b94-bd9e-2444c308007a}|src\Feature\Shop\website\Tshirts404.Feature.Shop.csproj</SourceWebProject>
     <SourceWebPhysicalPath>..\..\website</SourceWebPhysicalPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -26,8 +26,6 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <DisableFileDeployment>True</DisableFileDeployment>
     <ConnectorTimeoutSeconds>120</ConnectorTimeoutSeconds>
-    <EnableValidations>False</EnableValidations>
-    <ValidationSettingsFilePath>.\Tshirts404.Feature.BasicContent.Master_Debug.xml</ValidationSettingsFilePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -52,9 +50,9 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\website\Tshirts404.Feature.BasicContent.csproj">
-      <Project>{86b7e1bd-dc6d-45db-b11b-255b18c3cf62}</Project>
-      <Name>Tshirts404.Feature.BasicContent</Name>
+    <ProjectReference Include="..\..\website\Tshirts404.Feature.Shop.csproj">
+      <Project>{ad1bde83-298b-4b94-bd9e-2444c308007a}</Project>
+      <Name>Tshirts404.Feature.Shop</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
