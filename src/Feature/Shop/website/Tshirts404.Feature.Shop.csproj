@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="ordercloud-dotnet-catalyst" VersionOverride="1.6.0">
+      <AllowExplicitVersion>true</AllowExplicitVersion>
+    </PackageReference>
+    <PackageReference Include="OrderCloud.SDK" VersionOverride="&gt;0.10.5">
+      <AllowExplicitVersion>true</AllowExplicitVersion>
+    </PackageReference>
     <PackageReference Include="Sitecore.Kernel" />
     <PackageReference Include="Sitecore.Mvc" />
   </ItemGroup>
@@ -51,7 +57,34 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Helpers\OrchestrationAttributes.cs" />
+    <Compile Include="Helpers\OrderCloudClientFactory.cs" />
+    <Compile Include="Integrations\OrderCloudIntegrationsCreditCardPayment.cs" />
+    <Compile Include="Integrations\OrderCloudIntegrationsCreditCardToken.cs" />
+    <Compile Include="Models\Headstart\Extended\ExchangeRatesCurrencySymbols.cs" />
+    <Compile Include="Models\Headstart\HSAddressBuyer.cs" />
+    <Compile Include="Models\Headstart\HSAddressSupplier.cs" />
+    <Compile Include="Models\Headstart\HSLineItem.cs" />
+    <Compile Include="Models\Headstart\HSLineItemOrder.cs" />
+    <Compile Include="Models\Headstart\HSOrder.cs" />
+    <Compile Include="Models\Headstart\HSOrderCalculateResponse.cs" />
+    <Compile Include="Models\Headstart\HSOrderWorksheet.cs" />
+    <Compile Include="Models\Headstart\HSPayment.cs" />
+    <Compile Include="Models\Headstart\HSPriceSchedule.cs" />
+    <Compile Include="Models\Headstart\HSProduct.cs" />
+    <Compile Include="Models\Headstart\HSShipment.cs" />
+    <Compile Include="Models\Headstart\HSUser.cs" />
+    <Compile Include="Models\Headstart\IHSObject.cs" />
+    <Compile Include="Models\Json\BaseResultJson.cs" />
+    <Compile Include="Models\Json\CreateUserParamsJson.cs" />
+    <Compile Include="Models\Json\CreateOrderParamsJson.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,8 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\Include\Feature\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

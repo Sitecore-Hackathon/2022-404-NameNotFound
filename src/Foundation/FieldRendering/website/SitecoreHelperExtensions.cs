@@ -1,11 +1,11 @@
-﻿using System.Web;
-using Sitecore.Data;
+﻿using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Links;
 using Sitecore.Links.UrlBuilders;
 using Sitecore.Mvc.Helpers;
 using Sitecore.Resources.Media;
+using System.Web;
 
 namespace BasicCompany.Foundation.FieldRendering
 {
@@ -31,28 +31,28 @@ namespace BasicCompany.Foundation.FieldRendering
             return MediaUrl(sitecoreHelper, fieldId, sitecoreHelper.CurrentItem);
         }
 
-		public static string MediaUrl(this SitecoreHelper sitecoreHelper, ID fieldId, MediaUrlBuilderOptions options)
-		{
-			return MediaUrl(sitecoreHelper, fieldId, sitecoreHelper.CurrentItem, options);
-		}
-
-		public static string MediaUrl(this SitecoreHelper sitecoreHelper, ID fieldId, Item item)
+        public static string MediaUrl(this SitecoreHelper sitecoreHelper, ID fieldId, MediaUrlBuilderOptions options)
         {
-			return MediaUrl(sitecoreHelper, fieldId, item, null);
-		}
+            return MediaUrl(sitecoreHelper, fieldId, sitecoreHelper.CurrentItem, options);
+        }
 
-		public static string MediaUrl(this SitecoreHelper sitecoreHelper, ID fieldId, Item item, MediaUrlBuilderOptions options)
-		{
-			ImageField imageField = item?.Fields[fieldId];
+        public static string MediaUrl(this SitecoreHelper sitecoreHelper, ID fieldId, Item item)
+        {
+            return MediaUrl(sitecoreHelper, fieldId, item, null);
+        }
+
+        public static string MediaUrl(this SitecoreHelper sitecoreHelper, ID fieldId, Item item, MediaUrlBuilderOptions options)
+        {
+            ImageField imageField = item?.Fields[fieldId];
             if (imageField == null || imageField.MediaItem == null)
             {
                 return string.Empty;
             }
-			var url = options != null ? MediaManager.GetMediaUrl(imageField.MediaItem, options) : MediaManager.GetMediaUrl(imageField.MediaItem);
+            var url = options != null ? MediaManager.GetMediaUrl(imageField.MediaItem, options) : MediaManager.GetMediaUrl(imageField.MediaItem);
             return HashingUtils.ProtectAssetUrl(url);
-		}
+        }
 
-		public static string ItemUrl(this SitecoreHelper sitecoreHelper, Item item)
+        public static string ItemUrl(this SitecoreHelper sitecoreHelper, Item item)
         {
             return LinkManager.GetItemUrl(item);
         }

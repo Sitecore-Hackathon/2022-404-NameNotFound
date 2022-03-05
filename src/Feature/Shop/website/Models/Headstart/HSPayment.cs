@@ -1,0 +1,24 @@
+﻿using OrderCloud.SDK;
+
+namespace BasicCompany.Feature.BasicContent.Models.Headstart
+{
+
+    public class HSPayment : Payment<PaymentXP, HSPaymentTransaction>
+    {
+    }
+
+
+    public class HSPaymentTransaction : PaymentTransaction<TransactionXP>
+    {
+    }
+
+
+    public class PaymentXP
+    {
+    }
+
+
+    public class TransactionXP
+    {
+    }
+}

@@ -173,6 +173,7 @@
     <Content Include="assets\webfonts\fa-solid-900.ttf" />
     <Content Include="assets\webfonts\fa-solid-900.woff" />
     <Content Include="assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="App_Config\AppSettings.config" />
     <None Include="Views\web.config" />
     <None Include="web.config" />
     <None Include="web.Debug.config">
