@@ -12,9 +12,9 @@ namespace Tshirts.Feature.Shop.Helpers
             {
                 ClientId = ConfigurationManager.AppSettings["ClientId"] ?? "2BD024EF-A285-4469-9948-36246083A588",
                 ClientSecret = ConfigurationManager.AppSettings["ClientSecret"] ?? "RGPTLzWoUI1ZehGdUlyQlotf1fDrcAJT8nSudZ7NfcZLHEdyNIcGVVnJVZSy",
-                Username = ConfigurationManager.AppSettings["Username"] ?? "admin",
-                Password = ConfigurationManager.AppSettings["Password"] ?? "123qweASD!@#",
-                Roles = new[] { ApiRole.ProductAdmin, ApiRole.OrderAdmin }
+                ApiUrl = "https://sandboxapi.ordercloud.io",
+                AuthUrl = "https://sandboxapi.ordercloud.io",
+                Roles = new[] { ApiRole.FullAccess }
             });
 
         }
