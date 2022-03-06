@@ -31,14 +31,11 @@ namespace Tshirts.Feature.shop
             }
         }
 
-        public static class BasicContent
+        public static class Products
         {
             public static class Fields
             {
-                public static readonly ID HeroTitle = new ID("{DFBE4B2A-1ECD-4A1D-81A4-6901073624DA}");
-                public static readonly ID ProductSectionTitle = new ID("{2FC32E94-89C7-4132-AAFE-71EB6731F53D}");
-                public static readonly ID ProductSectionDescription = new ID("{8610C8F2-33AF-42CC-BDE8-5ADAC144CCBF}");
-                public static readonly ID ProductSectionList = new ID("{B4AF77E7-682F-43CF-AC15-36EAAC270D9F}");
+                public static readonly ID ProductList = new ID("{5658240D-7545-4E54-83D5-A60BDAD45D43}");
             }
         }
 

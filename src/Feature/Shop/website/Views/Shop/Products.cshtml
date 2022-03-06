@@ -1,14 +1,15 @@
 ﻿@using Sitecore.Data
 @using Tshirts.Feature.shop
 
+@{
+    var prodSectionList = @Html.Sitecore().Field(Templates.Products.Fields.ProductList);
+}
 
 <!-- products -->
 <div class="product-section mt-150 mb-150">
     <div class="container">
         <div class="row product-lists">
-            @{
-                var prodSectionList = @Html.Sitecore().Field(Templates.BasicContent.Fields.ProductSectionList);
-            }
+           
 
 
             @foreach (var productId in prodSectionList.ToString().Split('|'))
