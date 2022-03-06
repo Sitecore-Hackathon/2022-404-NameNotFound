@@ -12,15 +12,14 @@ namespace Tshirts.Feature.Shop.Repositories
     {
         public virtual void Process(PipelineArgs args)
         {
-            //RouteConfig.RegisterRoutes(RouteTable.Routes);
             RegisterRoute(RouteTable.Routes);
         }
 
         protected virtual void RegisterRoute(RouteCollection routes)
         {
-            RouteTable.Routes.MapHttpRoute("CreateProduct",
+            RouteTable.Routes.MapHttpRoute("ProductsSync",
                 "api/custom/createprod", /* do not include a forward slash in front of the route */
-                new { controller = "Shop", action = "CreateProduct" } /* controller name should not have the "Controller" suffix */
+                new { controller = "Product", action = "ProductsSync" } /* controller name should not have the "Controller" suffix */
             );
         }
     }
